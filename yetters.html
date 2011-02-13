@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>                                                                  
+		<script src="http://code.jquery.com/jquery-1.5.js"></script>       
+		<script>
+			var colours = ['aqua', 'blue', 'fuchsia', 'grey', 'green', 'maroon', 'navy', 'olive', 'purple', 'red', 'lime', 'teal', 'yellow'];
+			var i = 0;
+			$(document).keypress(function(event) {
+			  if (++i > colours.length) i = 0;				
+			  $('#letter').html("<span style='color:"+colours[i]+";'>" + String.fromCharCode(event.which)+ "</span>");
+			})
+		</script>
+		<style>
+			.big {
+				font-family: "Helvetica";
+				font-size: 500px;
+				text-align: center;
+			}
+		</style>		
+	</head>
+	<body>
+		<div class="big" id="letter">a</div>
+	</body>
+</html>
