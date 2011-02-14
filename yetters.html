@@ -7,7 +7,11 @@
 			var i = 0;
 			$(document).keypress(function(event) {
 			  if (++i > colours.length) i = 0;				
-			  $('#letter').html("<span style='color:"+colours[i]+";'>" + String.fromCharCode(event.which)+ "</span>");
+			  var strVal =  String.fromCharCode(event.which)
+			  if (isNaN(strVal)){
+				var strVal = (strVal.toUpperCase()+" "+ strVal.toLowerCase())
+			}
+			  $('#letter').html("<span style='color:"+colours[i]+";'>" + strVal+ "</span>");
 			})
 		</script>
 		<style>
