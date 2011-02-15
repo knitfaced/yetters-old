@@ -1,6 +1,15 @@
+body {
+    
+	color: #333333;
+    direction: ltr;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    text-align: left;
+}
+
 .big {
 	font-family: "Helvetica";
-	font-size: 150px;
+	font-size: 140px;
 	text-align: center;
 }
 .mid {
@@ -15,3 +24,32 @@
 	text-align: center;
 	color: black;
 }
+.regleft {
+	font-family: "Helvetica";
+	font-size: 30px;
+	text-align: left;
+	color: black;
+}
+
+.topper {
+	width:100%;
+	float:left;
+	margin-right:10px;
+	
+		
+}
+.last {
+	margin-right:0px;
+	}
+
+	
+
+
+/* Navigation */
+
+nav {
+  
+  top:1;
+  float: right;
+}
+
