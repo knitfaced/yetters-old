@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>                                                                  
+		<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
 		<script src="http://code.jquery.com/jquery-1.5.js"></script>       
 		<script>
 			var colours = ['aqua', 'blue', 'fuchsia', 'grey', 'green', 'maroon', 'navy', 'olive', 'purple', 'red', 'lime', 'teal', 'yellow'];
@@ -12,17 +13,18 @@
 				var strVal = (strVal.toUpperCase()+" "+ strVal.toLowerCase())
 			}
 			  $('#letter').html("<span style='color:"+colours[i]+";'>" + strVal+ "</span>");
+			  $('#msg').html("");  // really the best way to do this??
 			})
 		</script>
-		<style>
-			.big {
-				font-family: "Helvetica";
-				font-size: 2500px;
-				text-align: center;
-			}
-		</style>		
+			
 	</head>
 	<body>
-		<div class="big" id="letter">a</div>
+			 <div>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fapps.facebook.com%2Fyetters%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+		</div>
+	
+		<div class="big" id="letter" ><span style='color: red;'>Y</span><span style='color: yellow;'> e </span><span style='color: aqua;'> t</span><span style='color: pink;'> t</span><span style='color: black;'> e</span><span style='color: green;'> r</span><span style='color: orange;'> s</span><span style='color: yellow;'></div>
+		<div class="mid" id="msg" >click on the page and press the keyboard to begin</div>
+
 	</body>
 </html>

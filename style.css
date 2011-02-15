@@ -1,0 +1,17 @@
+.big {
+	font-family: "Helvetica";
+	font-size: 150px;
+	text-align: center;
+}
+.mid {
+	font-family: "Helvetica";
+	font-size: 45px;
+	text-align: center;
+	color: black;
+}
+.reg {
+	font-family: "Helvetica";
+	font-size: 30px;
+	text-align: center;
+	color: black;
+}
