@@ -25,6 +25,7 @@ body {
 	color: black;
 }
 .regleft {
+	width: 50%;
 	font-family: "Helvetica";
 	font-size: 30px;
 	text-align: left;
@@ -43,8 +44,6 @@ body {
 	}
 
 	
-
-
 /* Navigation */
 
 nav {
@@ -52,4 +51,7 @@ nav {
   top:1;
   float: right;
 }
-
+/* Need this hack to remove the 'like' button on the fb:comments iframe*/
+div.like {
+    display:none;
+}
