@@ -7,20 +7,22 @@
 			var colours = ['aqua', 'blue', 'fuchsia', 'grey', 'green', 'maroon', 'navy', 'olive', 'purple', 'red', 'lime', 'teal', 'yellow'];
 			var i = 0;
 			$(document).keypress(function(event) {
-			  if (++i > colours.length) i = 0;				
-			  var strVal =  String.fromCharCode(event.which)
-			  if (isNaN(strVal)){
-				var strVal = (strVal.toUpperCase()+" "+ strVal.toLowerCase())
-			}
-			  $('#letter').html("<span style='color:"+colours[i]+";'>" + strVal+ "</span>");
-			  $('#msg').html("");  // really the best way to do this??
-			})
+				$('#msg').html('');			  
+				if (++i > colours.length) 
+					i = 0;				
+			  var yetterPressed =  String.fromCharCode(event.which);
+				var yetterRegExp  = /^[a-zA-Z]+$/;
+				if (yetterRegExp.test(yetterPressed)) {
+					var yetterPressed = (yetterPressed.toUpperCase()+" "+ yetterPressed.toLowerCase())
+				}
+			  $('#letter').html("<span style='color:"+colours[i]+";'>" + yetterPressed+ "</span>");			  
+			});
 		</script>
 			
 	</head>
 	<body>
-			 <div class="topper">
-<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fapps.facebook.com%2Fyetters%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+	 <div class="topper">
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fapps.facebook.com%2Fyetters%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
 	
 		<nav>
 			<a href="./about.html">about</a>
