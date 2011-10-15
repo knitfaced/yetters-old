@@ -7,9 +7,9 @@
 			var colours = ['aqua', 'blue', 'fuchsia', 'grey', 'green', 'maroon', 'navy', 'olive', 'purple', 'red', 'lime', 'teal', 'yellow'];
 			var i = 0;
 			$(document).keypress(function(event) {
-				$('#msg').html('');			  
-				if (++i > colours.length) 
-					i = 0;				
+			$('#msg').html('');			  
+			if (++i > colours.length) 
+				i = 0;			
 			  var yetterPressed =  String.fromCharCode(event.which);
 				var yetterRegExp  = /^[a-zA-Z]+$/;
 				if (yetterRegExp.test(yetterPressed)) {
